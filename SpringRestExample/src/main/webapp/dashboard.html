@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ANZ Home</title>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/canvasjs.min.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/navigation.js"></script>
+
+
+<link rel="stylesheet" href="css/style.css">
+  	  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+	<!--[if IE]>
+	<link href="css/font-awesome-4.7.0/css/font-awesome-ie7.min.css" rel="stylesheet" />
+	<![endif]-->
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="menu menu_right">
+			<select id="userName">
+				<option value="User Name">User Name</option>
+			</select>
+			<p>
+				<a href="" class="button logoutBtn">Logout</a>
+			</p>
+		</div>
+		<div class="menu menu_left">
+			<ul>
+				<li><a href="#home" class="menuLink">Home</a></li>
+				<li><a href="#dashboard" class="menuLink">Dashboards</a></li>
+			</ul>
+			<ul>
+				<li><span id="selectedMenu">Dashboards</span></li>
+			</ul>
+		</div>
+	</div>
+	<div id="dashboard" class="content">
+		<div id="pie" style="float:left; width:40%;">
+				<span class="logTitle">Log Types</span><br>		
+				<span style="color: blue;"><i class="fa fa-battery-full" aria-hidden="true"></i></span>&nbsp;INFO
+				<span style="color: red;"><i class="fa fa-battery-full" aria-hidden="true"></i></span>&nbsp;TRACE
+				<span style="color: green;"><i class="fa fa-battery-full" aria-hidden="true"></i></span>&nbsp;DEBUG
+			<canvas id="canvas" height="400" width=400>Your browser doesn't support HTML 5</canvas>
+		</div>
+		<div id="chartContainer" style="float:right; width:60%;">
+	</div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ANZ Home</title>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/list.js"></script>
+<script src="js/navigation.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="menu menu_right">
+			<select id="userName">
+				<option value="">User Name</option>
+			</select>
+			<p>
+				<a href="" class="button logoutBtn">Logout</a>
+			</p>
+		</div>
+		<div class="menu menu_left">
+			<ul>
+				<li><a href="#home" class="menuLink">Home</a></li>
+				<li><a href="#dashboard" class="menuLink">Dashboards</a></li>
+			</ul>
+			<ul>
+				<li><span id="selectedMenu">Home</span></li>
+			</ul>
+		</div>
+	</div>
+	<div id="home" class="content">
+		<div style="float:left; width:20%;">
+			<select id="logLevelFiter">
+				<option value="DEBUG">DEBUG</option>
+				<option value="INFO">INFO</option>
+				<option value="WARN">WARN</option>
+				<option value="ERROR">ERROR</option>
+				<option value="FATAL">FATAL</option>
+			</select>
+		</div>
+		<div style="float:right;width:80%;">
+			<table id="datas" class="bordered">
+				<thead>
+
+					<tr>
+						<th>TimeStamp</th>
+						<th>Log Maker</th>
+						<th>Logger</th>
+						<th>Log Level</th>
+						<th>Current Thread</th>
+						<th>Log Message</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr id="template" style="display:none;">
+					<td id="timeStamp"></td>
+					<td id="logMaker"></td>
+					<td id="logger"></td>
+					<td id="logLevel"></td>
+					<td id="currentThread"></td>
+					<td id="logMessage"></td>					
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
