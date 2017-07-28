@@ -16,7 +16,7 @@ $(function() {
 	ctx.font = '12px verdana';
 
 	var PI2 = Math.PI * 2;
-	var myColor = ["blue", "red", "green"];
+	var myColor = ["#5280f8", "#ff5555", "#00df70"];
 	var total = inforArr.length+traceArr.length+debugArr.length;
 
 	var myLabels = ["A", "B", "C"];
